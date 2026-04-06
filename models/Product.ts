@@ -80,6 +80,7 @@ const ProductSchema = new Schema<IProduct>(
       type: Number,
       default: 0,
     },
+    // @ts-ignore
     isNew: {
       type: Boolean,
       default: false,
