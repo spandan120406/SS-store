@@ -116,9 +116,9 @@ const ProductSchema = new Schema<IProduct>(
 
 // Indexes for common queries
 ProductSchema.index({ category: 1 });
-ProductSchema.index({ isFeatured: 1 });
-ProductSchema.index({ isNew: 1 });
-ProductSchema.index({ isSale: 1 });
+ProductSchema.index({ isFeatured: 1 } as any);
+ProductSchema.index({ isNew: 1 } as any);
+ProductSchema.index({ isSale: 1 } as any);
 ProductSchema.index({ price: 1 });
 ProductSchema.index({ name: 'text', description: 'text', tags: 'text' });
 
