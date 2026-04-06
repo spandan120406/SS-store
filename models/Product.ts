@@ -70,29 +70,11 @@ const ProductSchema = new Schema<IProduct>(
       type: [String],
       default: [],
     },
-    rating: {
-      type: Number,
-      default: 0,
-      min: 0,
-      max: 5,
-    },
-    reviewCount: {
-      type: Number,
-      default: 0,
-    },
-    // @ts-ignore
-    isNew: {
-      type: Boolean,
-      default: false,
-    },
-    isSale: {
-      type: Boolean,
-      default: false,
-    },
-    isFeatured: {
-      type: Boolean,
-      default: false,
-    },
+    rating: { type: Number, default: 0 },
+    reviewCount: { type: Number, default: 0 },
+    isNew: { type: Boolean, default: false },
+    isSale: { type: Boolean, default: false },
+    isFeatured: { type: Boolean, default: false },
     stock: {
       type: Number,
       default: 0,
